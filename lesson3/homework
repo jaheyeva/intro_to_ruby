@@ -1,0 +1,4 @@
+names = ["Julia", "Denis", "Andrew", "Alena", "Irina", "Volha"]
+names.each do |relative|
+	puts relative + " is my relative"
+end
