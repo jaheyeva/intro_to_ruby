@@ -1,3 +1,4 @@
 class Review < ActiveRecord::Base
-  attr_accessible :article, :date, :poster
+  validates :title, :presence => true
+  validates :poster, :presence => true
 end
