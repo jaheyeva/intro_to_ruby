@@ -1,20 +1,11 @@
-<p id="notice"><%= notice %></p>
-
+<h2><%= @review.title %></h2>
 <p>
-  <b>Poster:</b>
-  <%= @review.poster %>
+  Posted by:<%= @review.poster %>
+  on <%= @review.date %>
 </p>
-
 <p>
-  <b>Date:</b>
-  <%= @review.date %>
-</p>
-
-<p>
-  <b>Article:</b>
+  <b>Review:</b><br />
   <%= @review.article %>
 </p>
-
-
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<%= link_to 'Edit review', edit_review_path(@review) %> |
+<%= link_to 'Back to main menu', reviews_path %>
